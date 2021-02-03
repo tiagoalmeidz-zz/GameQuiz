@@ -1,0 +1,61 @@
+{
+  "bg": "https://wallpaperaccess.com/full/842447.jpg",
+  "title": "Quiz sobre games em geral!",
+  "description": "Um quiz rápido sobre o mundo dos games.",
+  "questions": [
+    {
+      "image": "https://media.giphy.com/media/l0MYJAzu5RTVSGeiY/giphy.gif",
+      "title": "O melhor jogo do de mundo aberto?",
+      "description": "Pergunta fácil em!",
+      "answer": 0,
+      "alternatives": [
+        "GTA V",
+        "Watch Dog Legion"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/Ie2Hs3A0uJRtK/giphy.gif",
+      "title": "Qual o melhor jogo de Futebol?",
+      "description": "E agora? Você sabe?",
+      "answer": 1,
+      "alternatives": [
+        "Pro Evolution Soccer (PES)",
+        "FIFA"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
+      "title": "O melhor jodo de corrida atualmente?",
+      "answer": 1,
+      "alternatives": [
+        "Need For Speed",
+        "Forza Horizon"
+      ]
+    },
+    {
+      "image": "https://media.giphy.com/media/iI4vhciiVh2b3j9sgo/giphy.gif",
+      "title": "Melhor exclusivo de Playstation?",
+      "answer": 2,
+      "alternatives": [
+        "The Last of US",
+        "Spider Man",
+        "God of War"
+      ]
+    }
+  ],
+  "external": [
+    "https://games.tiagoalmeidz.vercel.app/",
+    "https://gamequiz-tiagoalmeidz.vercel.app/"
+  ],
+  "theme": {
+    "colors": {
+      "primary": "#222222",
+      "secondary": "#1769aa",
+      "mainBg": "#213f4e",
+      "contrastText": "#fafafa",
+      "wrong": "#f44336",
+      "success": "#4CAF50"
+    },
+    "borderRadius": "8px"
+  }
+}
