@@ -28,6 +28,18 @@ const Widget = styled.div`
   overflow: hidden;
 `
 
+Widget.Header = styled.header`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 32px;
+  background-color: ${({ theme }) => theme.colors.primary};
+
+  * {
+    margin: 0;
+  }
+`
+
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   & > *:first-child {
@@ -47,8 +59,10 @@ export default function Home() {
     <BackgroundImage>
       <QuizContainer>
         <Widget>
-          <Widget.Content>
+          <Widget.Header>
             <h1>Quiz sobre games!</h1>
+          </Widget.Header>
+          <Widget.Content>
             <p>Lorem ipsum, dolor sit amet...</p>
           </Widget.Content>
         </Widget>
