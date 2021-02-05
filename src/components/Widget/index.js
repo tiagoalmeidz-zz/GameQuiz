@@ -3,8 +3,8 @@ import styled from 'styled-components'
 export const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  border: 1px solid #4CAF50;
-  background-color: #1c1814;
+  border: 1px solid ${({ theme }) => theme.colors.secondary};
+  background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 10px;
   overflow: hidden;
 `
