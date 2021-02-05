@@ -29,12 +29,6 @@ const GlobalStyle = createGlobalStyle`
 `
 const theme = db.theme;
 
-// const theme = {
-//   colors: {
-//     primary: '#2196f3',
-//   },
-// }
-
 export default function App({ Component, pageProps }) {
   return (
     <>

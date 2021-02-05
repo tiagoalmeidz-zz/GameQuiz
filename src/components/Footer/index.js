@@ -9,6 +9,7 @@ const FooterWrapper = styled.footer`
   img {
     width: 58px;
     margin-right: 23px;
+    border-radius: 50%;
   }
   a {
     color: white;

@@ -1,5 +1,8 @@
 import styled from 'styled-components'
 import db from '../db.json'
+import Footer from '../src/components/Footer'
+import GitHubCorner from '../src/components/GitHubCorner'
+import QuizBackground from '../src/components/QuizBackground'
 import { Widget } from '../src/components/Widget'
 
 const BackgroundImage = styled.div`
@@ -11,7 +14,7 @@ const BackgroundImage = styled.div`
 
 export const QuizContainer = styled.div`
   width: 100%;
-  max-width: 350px;
+  max-width: 365px;
   padding-top: 45px;
   margin: auto 10%;
   @media screen and (max-width: 500px) {
@@ -22,7 +25,7 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   return (
-    <BackgroundImage>
+    <QuizBackground backgroundImage={db.bg}>
       <QuizContainer>
         <Widget>
           <Widget.Header>
@@ -39,7 +42,9 @@ export default function Home() {
             <p>Lorem ipsum, dolor sit amet...</p>
           </Widget.Content>
         </Widget>
+        <Footer/>
       </QuizContainer>
-    </BackgroundImage>
+      <GitHubCorner projectUrl="https://github.com/tiagoalmeidz/GameQuiz" />
+    </QuizBackground>
   )
 }

@@ -51,7 +51,7 @@
     "colors": {
       "primary": "#1769aa",
       "secondary": "#f50057",
-      "mainBg": "#213f4e",
+      "mainBg": "#201F1F",
       "contrastText": "#fafafa",
       "wrong": "#f44336",
       "success": "#4CAF50"
