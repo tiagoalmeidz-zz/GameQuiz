@@ -19,7 +19,9 @@ module.exports = {
   ],
   rules: {
     'react/jsx-filename-extension': [
-      { extensions: ['.js', '.jsx'] },
+      'error', { extensions: ['.js', '.jsx'] },
     ],
+    'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };

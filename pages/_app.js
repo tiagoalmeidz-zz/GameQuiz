@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { createGlobalStyle, ThemeProvider } from 'styled-components';
+import { PropTypes } from 'prop-types';
 import db from '../db.json';
 
 const GlobalStyle = createGlobalStyle`
@@ -44,3 +45,8 @@ export default function App({ Component, pageProps }) {
     </>
   );
 }
+
+App.propTypes = {
+  Component: PropTypes.node.isRequired,
+  pageProps: PropTypes.node.isRequired,
+};
