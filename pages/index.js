@@ -1,3 +1,5 @@
+import { useRouter } from 'next/router';
+import { useState } from 'react';
 import styled from 'styled-components';
 import db from '../db.json';
 import Footer from '../src/components/Footer';
@@ -18,6 +20,14 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const [name, setName] = useState('');
+  const router = useRouter();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    router.push(`/quiz?name=${name}`);
+  }
+
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Header />
@@ -33,8 +43,12 @@ export default function Home() {
 
         <Widget>
           <Widget.Content>
-            <h1>Quiz da galera.</h1>
-            <p>Lorem ipsum, dolor sit amet...</p>
+            <form onSubmit={e => handleSubmit(e)}>
+              <input placeholder="Diga seu nome!" value={name} onChange={e => setName(e.target.value)}/>
+              <button type="submit">
+                Bora Jogar {name ? name : 'Desconhecido'}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Footer />
