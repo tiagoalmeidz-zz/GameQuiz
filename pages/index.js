@@ -1,17 +1,10 @@
-import styled from 'styled-components'
-import db from '../db.json'
-import Footer from '../src/components/Footer'
-import GitHubCorner from '../src/components/GitHubCorner'
-import Header from '../src/components/Header'
-import QuizBackground from '../src/components/QuizBackground'
-import { Widget } from '../src/components/Widget'
-
-const BackgroundImage = styled.div`
-  background-image: url(${db.bg});
-  flex: 1;
-  background-size: 'cover';
-  background-position: 'center';
-`
+import styled from 'styled-components';
+import db from '../db.json';
+import Footer from '../src/components/Footer';
+import GitHubCorner from '../src/components/GitHubCorner';
+import Header from '../src/components/Header';
+import QuizBackground from '../src/components/QuizBackground';
+import { Widget } from '../src/components/Widget';
 
 export const QuizContainer = styled.div`
   width: 100%;
@@ -22,12 +15,12 @@ export const QuizContainer = styled.div`
     margin: auto;
     padding: 15px; 
   }
-`
+`;
 
 export default function Home() {
   return (
     <QuizBackground backgroundImage={db.bg}>
-      <Header/>
+      <Header />
       <QuizContainer>
         <Widget>
           <Widget.Header>
@@ -44,9 +37,9 @@ export default function Home() {
             <p>Lorem ipsum, dolor sit amet...</p>
           </Widget.Content>
         </Widget>
-        <Footer/>
+        <Footer />
       </QuizContainer>
       <GitHubCorner projectUrl="https://github.com/tiagoalmeidz/GameQuiz" />
     </QuizBackground>
-  )
+  );
 }

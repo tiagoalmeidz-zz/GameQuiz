@@ -27,7 +27,6 @@ const FooterWrapper = styled.footer`
 
 export default function Footer(props) {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
     <FooterWrapper {...props}>
       <a href="https://github.com/tiagoalmeidz">
         <img src="https://avatars.githubusercontent.com/u/6900314?s=460&u=beb5c1c71d590e15dcb4f60c8134993854ac597d&v=4" alt="Picture Tiago" />
