@@ -12,8 +12,8 @@ import QuizContainer from '../src/components/QuizContainer';
 import Widget from '../src/components/Widget';
 
 export default function Home() {
-  const [name, setName] = useState('');
   const router = useRouter();
+  const [name, setName] = useState('');
 
   function handleSubmit(e) {
     e.preventDefault();

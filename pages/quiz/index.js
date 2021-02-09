@@ -1,12 +1,12 @@
-import db from '../db.json';
-import Button from '../src/components/Button';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
-import Header from '../src/components/Header';
-import Input from '../src/components/Input';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Widget from '../src/components/Widget';
+import db from '../../db.json';
+import Button from '../../src/components/Button';
+import Footer from '../../src/components/Footer';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import Header from '../../src/components/Header';
+import Input from '../../src/components/Input';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import Widget from '../../src/components/Widget';
 
 export default function QuizPage() {
   return (
@@ -15,10 +15,10 @@ export default function QuizPage() {
       <QuizContainer>
         <Widget>
           <Widget.Header>
-            <h1>Quiz sobre games!</h1>
+            Carregando...
           </Widget.Header>
           <Widget.Content>
-            <p>Lorem ipsum, dolor sit amet...</p>
+            [Loading]
           </Widget.Content>
         </Widget>
 
