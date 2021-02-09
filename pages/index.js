@@ -2,9 +2,11 @@ import { useRouter } from 'next/router';
 import { useState } from 'react';
 import styled from 'styled-components';
 import db from '../db.json';
+import Button from '../src/components/Button';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import Header from '../src/components/Header';
+import Input from '../src/components/Input';
 import QuizBackground from '../src/components/QuizBackground';
 import Widget from '../src/components/Widget';
 
@@ -44,12 +46,12 @@ export default function Home() {
         <Widget>
           <Widget.Content>
             <form onSubmit={(e) => handleSubmit(e)}>
-              <input placeholder="Diga seu nome!" value={name} onChange={(e) => setName(e.target.value)} />
-              <button type="submit" disabled={name.length === 0}>
+              <Input name="playerName" placeholder="Diga seu nome!" value={name} onChange={(e) => setName(e.target.value)} />
+              <Button type="submit" disabled={name.length === 0}>
                 Jogar
                 {' '}
                 {name || 'Desconhecido'}
-              </button>
+              </Button>
             </form>
           </Widget.Content>
         </Widget>
