@@ -12,29 +12,3 @@ export default function Quiz() {
     </ThemeProvider>
   );
 }
-
-// export default function QuizPage() {
-//   return (
-//     <QuizBackground backgroundImage={db.bg}>
-//       <Header />
-//       <QuizContainer>
-//         <Widget>
-//           <Widget.Header>
-//             Carregando...
-//           </Widget.Header>
-//           <Widget.Content>
-//             [Loading]
-//           </Widget.Content>
-//         </Widget>
-
-//         <Widget>
-//           <Widget.Content>
-//             <h1>Hi</h1>
-//           </Widget.Content>
-//         </Widget>
-//         <Footer />
-//       </QuizContainer>
-//       <GitHubCorner projectUrl="https://github.com/tiagoalmeidz/GameQuiz" />
-//     </QuizBackground>
-//   );
-// }
