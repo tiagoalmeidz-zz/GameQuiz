@@ -48,9 +48,7 @@ export default function Home() {
             <form onSubmit={(e) => handleSubmit(e)}>
               <Input name="playerName" placeholder="Diga seu nome!" value={name} onChange={(e) => setName(e.target.value)} />
               <Button type="submit" disabled={name.length === 0}>
-                Jogar
-                {' '}
-                {name || 'Desconhecido'}
+                {`Jogar ${name}`}
               </Button>
             </form>
           </Widget.Content>
