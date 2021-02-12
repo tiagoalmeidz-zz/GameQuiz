@@ -11,7 +11,7 @@ import Input from '../src/components/Input';
 import QuizBackground from '../src/components/QuizBackground';
 import QuizContainer from '../src/components/QuizContainer';
 import Widget from '../src/components/Widget';
-import Link from '../src/components/Link';
+// import Link from '../src/components/Link';
 
 export default function Home() {
   const router = useRouter();
